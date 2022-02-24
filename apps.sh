@@ -13,7 +13,7 @@ echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githu
 apt update -y 
 apt install gh -y 
 
-#docker
+#Docker
 apt-get install \
     ca-certificates -y \
     curl -y \
@@ -25,3 +25,12 @@ echo \
   $(lsb_release -cs) stable" | tee /etc/apt/sources.list.d/docker.list > /dev/null
 apt-get update -y
 apt-get install -y docker-ce docker-ce-cli containerd.io
+
+#Allow docker without root
+sudo usermod -aG docker $USER && newgrp docker
+
+#Start docker
+sudo dockerd
+
+#Add repo folder
+mkdir repos
