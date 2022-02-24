@@ -25,6 +25,7 @@ echo \
   $(lsb_release -cs) stable" | tee /etc/apt/sources.list.d/docker.list > /dev/null
 apt-get update -y
 apt-get install -y docker-ce docker-ce-cli containerd.io
+apt install -y docker-compose
 
 #Allow docker without root
 sudo usermod -aG docker $USER && newgrp docker
