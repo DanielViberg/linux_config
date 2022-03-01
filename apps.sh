@@ -20,11 +20,8 @@ echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githu
 apt update -y 
 apt install gh -y 
 
-#KeePass
-apt-add-repository ppa:jtaylor/keepass
-apt-get update
-apt-get install -y keepass2
-apt install -y libcanberra-gtk-module libcanberra-gtk3-module
+#KeePassXC
+apt-get install -y keepassxc
 
 #OneDrive
 add-apt-repository ppa:yann1ck/onedrive
