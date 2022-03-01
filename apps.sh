@@ -12,3 +12,12 @@ curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | dd of
 echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | tee /etc/apt/sources.list.d/github-cli.list > /dev/null
 apt update -y 
 apt install gh -y 
+
+#KeePass
+apt-add-repository ppa:jtaylor/keepass
+apt-get update
+sudo apt-get install keepass2
+
+#OneDrive
+add-apt-repository ppa:yann1ck/onedrive
+apt install onedrive
