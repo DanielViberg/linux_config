@@ -23,7 +23,8 @@ apt install gh -y
 #KeePass
 apt-add-repository ppa:jtaylor/keepass
 apt-get update
-sudo apt-get install keepass2
+apt-get install -y keepass2
+apt install -y libcanberra-gtk-module libcanberra-gtk3-module
 
 #OneDrive
 add-apt-repository ppa:yann1ck/onedrive
