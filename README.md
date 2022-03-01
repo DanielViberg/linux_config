@@ -3,3 +3,7 @@
 ## GET
 sudo rm .bashrc\
 git pull https://github.com/DanielViberg/linux_config
+
+## Services
+- Onedrive
+- Docker
