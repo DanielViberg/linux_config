@@ -38,3 +38,6 @@ apt-get install docker-ce docker-ce-cli containerd.io
 #MySQL
 sudo apt install mysql-server
 sudo service mysql start
+
+#Add fix for caps script in correct dir
+cp FixCapsDelay.sh /etc/profile.d/
