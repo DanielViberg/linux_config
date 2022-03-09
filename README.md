@@ -1,6 +1,7 @@
 # linux_config
 
 Run Xorg, not Wayland = fix for capslock delay
+Add to startup: Command: bash -ic "sh /home/daniel/FixCapsDelay.sh"
 
 ## Adjust scrollspeed
 (Under xorg)
