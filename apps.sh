@@ -29,9 +29,6 @@ echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githu
 apt update -y 
 apt install gh -y 
 
-#KeePassXC
-apt-get install -y keepassxc
-
 #OneDrive
 add-apt-repository ppa:yann1ck/onedrive
 apt install onedrive
