@@ -29,10 +29,6 @@ echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githu
 apt update -y 
 apt install gh -y 
 
-#OneDrive
-add-apt-repository ppa:yann1ck/onedrive
-apt install onedrive
-
 #Docker
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
 echo \
@@ -47,4 +43,7 @@ sudo service mysql start
 
 #RDP
 apt install freerdp2-x11
+
+# Joplin
+get -O - https://raw.githubusercontent.com/laurent22/joplin/dev/Joplin_install_and_update.sh | bash
 
