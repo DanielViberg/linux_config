@@ -38,15 +38,10 @@ apt-get update
 apt-get install docker-ce docker-ce-cli containerd.io
 
 #MySQL
-sudo apt install mysql-server
-sudo service mysql start
+sudo apt install mysql-client
 
 #RDP
 apt install freerdp2-x11
 
 # Joplin
 get -O - https://raw.githubusercontent.com/laurent22/joplin/dev/Joplin_install_and_update.sh | bash
-
-# KeeWeb
-
-
