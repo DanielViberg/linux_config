@@ -1,5 +1,8 @@
 # linux_config
 
+## General
+remove snapd, broken firefox
+
 ## Manual install
 -auto_cpufreq (turn off intel_pstates)<br>
 -keeweb<br>
